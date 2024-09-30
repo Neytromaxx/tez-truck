@@ -54,5 +54,40 @@ const submit = () =>{
     border: 1px solid #132ce5;
     border-radius: .7rem;
     background-color: #132ce5;
+    cursor: pointer;
+  }
+
+@media (max-width:468px) {
+    .container{
+    width: 468px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url('../assets/img/intro-main.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .row{
+    max-width: 468px;
+  }
+
+  .btn{
+    text-align: center;
+  }
+
+  button{
+    width: 320px;
+    height: 60px;
+    margin: 20px 0px;
+    font-size: 1.7rem;
+    color: #fff;
+    border: 1px solid #132ce5;
+    border-radius: .7rem;
+    background-color: #132ce5;
+    cursor: pointer;
+  }
 }
 </style>
