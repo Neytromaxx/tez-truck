@@ -31,7 +31,7 @@
 
     if (currentIndex.value === images.length - 1) {
       localStorage.setItem('aboutShown', 'true')
-      router.push('/')
+      router.push('/home')
     }
   }
 
@@ -47,7 +47,7 @@ onUnmounted(() => {
 <template>
   <div class="container">
     <div class="row">
-      <div class="img" @click="nextImg">
+      <div class="img" @click="nextImage">
         <img :src="currentImg.src" alt="">
         <h1>{{ currentImg.title }}</h1>
         <p>{{ currentImg.des }}</p>
