@@ -5,7 +5,7 @@ const router = useRouter()
 
 const submit = () =>{
     localStorage.setItem('introShown', 'true')
-    router.push('/')
+    router.push('/about')
 }
 </script>
 
@@ -18,7 +18,6 @@ const submit = () =>{
                 <button type="submit">Boshlash</button>
             </div>
         </form>
-        
       </div>
     </div>
   </main>

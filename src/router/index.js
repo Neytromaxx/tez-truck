@@ -25,9 +25,12 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   const introShown = localStorage.getItem('introShown')
+  const aboutShown = localStorage.getItem('aboutShown')
 
   if (!introShown && to.name !== 'start') {
     next({ name: 'start' })
+  } else if(!aboutShown && to.name !== 'about'){
+    next({ name: 'about' })
   } else {
     next()
   }
