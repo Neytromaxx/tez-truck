@@ -4,7 +4,7 @@ import { useRouter } from 'vue-router';
 const router = useRouter()
 
 const submit = () =>{
-    localStorage.setItem('introShown', 'true')
+    localStorage.setItem('introShown', true)
     router.push('/about')
 }
 </script>
