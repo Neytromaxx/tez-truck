@@ -61,6 +61,7 @@ onUnmounted(() => {
   .container{
     width: 768px;
     height: 100vh;
+    height: var(--vh, 100vh);
     margin: 0 auto;
     background-color: #ffbb01;
   }

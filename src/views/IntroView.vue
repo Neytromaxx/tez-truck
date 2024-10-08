@@ -27,6 +27,7 @@ const submit = () =>{
   .container{
     width: 768px;
     height: 100vh;
+    height: var(--vh, 100vh);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
