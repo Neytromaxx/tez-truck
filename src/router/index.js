@@ -24,17 +24,17 @@ const router = createRouter({
 })
 
 
-router.beforeEach((to, from, next) => {
-  const introShown = localStorage.getItem('introShown')
-  const aboutShown = localStorage.getItem('aboutShown')
+// router.beforeEach((to, from, next) => {
+//   const introShown = localStorage.getItem('introShown')
+//   const aboutShown = localStorage.getItem('aboutShown')
 
-  if (!introShown && to.name !== 'start') {
-    next({ name: 'start' })
-  } else if(introShown && !aboutShown && to.name !== 'about'){
-    next({ name: 'about' })
-  } else {
-    next()
-  }
-})
+//   if (!introShown && to.name !== 'start') {
+//     next({ name: 'start' })
+//   } else if(introShown && !aboutShown && to.name !== 'about'){
+//     next({ name: 'about' })
+//   } else {
+//     next()
+//   }
+// })
 
 export default router
