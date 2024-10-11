@@ -179,5 +179,13 @@ onUnmounted(() => {
     height: 250px;
     margin: 70px 0px;
   }
+
+  h1{
+    font-size: 2.2rem;
+  }
+
+  p{
+    font-size: 1.8rem;
+  }
 }
 </style>
