@@ -19,7 +19,27 @@ const router = createRouter({
       name: 'start',
       alias: '/',
       component: () => import('../views/IntroView.vue')
-    }
+    },
+    {
+      path: '/user',
+      name: 'user',
+      component: () => import('../views/UserView.vue')
+    },
+    {
+      path: '/agent',
+      name: 'agent',
+      component: () => import('../views/AgentView.vue')
+    },
+    {
+      path: '/owner',
+      name: 'owner',
+      component: () => import('../views/OwnerView.vue')
+    },
+    {
+      path: '/driver',
+      name: 'driver',
+      component: () => import('../views/DriverView.vue')
+    },
   ]
 })
 
